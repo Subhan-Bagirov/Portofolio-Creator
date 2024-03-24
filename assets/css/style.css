@@ -1,70 +1,198 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 /*Fontlar Start*/
 .roboto-thin {
-    font-family: "Roboto", sans-serif;
-    font-weight: 100;
-    font-style: normal;
-  }
-  
-  .roboto-light {
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-  }
-  
-  .roboto-regular {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .roboto-medium {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-  }
-  
-  .roboto-bold {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  .roboto-black {
-    font-family: "Roboto", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-  }
-  
-  /*Fontlarin elave edilmesi bitdi*/
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
 
-   header{ 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-   /*margin-left: 112px;
+.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-black {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+/*Fontlarin elave edilmesi bitdi*/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /*margin-left: 112px;
    margin-right: 112px;
    margin-top: 40px;
    margin: 40px 112.5px 13px 112px;
    }*/
+}
+
+a {
+  text-decoration: none
+}
+
+.header {
+  padding-top: 35px;
+}
+
+/* S */
+.nav-links .link {
+  margin-right: 6px;
+
+}
+
+header nav a {
+  color: #000;
+}
+
+header nav {
+  display: none;
+}
+
+/* Introduction start */
+
+/* Descedant selector */
+
+.introduction>.intro-left-side h1 span {
+  /* ctrl / */
+
+  /*font-size: 72px;*/
+
+  color: #FF8A56;
+
+}
+
+.introduction>.intro-left-side h1 {
+  margin-top: 42px;
+  font-size: 37px;
+}
+
+
+
+/* Introduction end */
+
+/* 476px */
+
+.intro-right-side {
+  width: 300px;
+}
+
+.intro-right-side img {
+  width: 100%;
+}
+.intro-left-side p {
+color: #666;
+/*font-size: 22px;*/ 
+}
+.intro-left-side .book-a-call .book-btn {
+  background-color: #222;
+  color: #fff;
+  width: 151px;
+  height: 58px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  transition: 1.4s ease;
+  /* border: 21px groove gold */
+}
+
+
+
+
+.dowloand-cv{
+  margin-left: 20px ;
+color: #000 ;
+}
+
+.arrow{
+  margin-left: 4px;
+}
+.shirketler h5{
+  text-align: center;
+  margin-bottom: 30px;
+}
+.partnyorlar{
+  display: flex;
+  justify-content: space-around; 
+}
+ .shirket {
+  margin-top: 20px;
+ }
+ 
+
+
+
+
+
+
+
+
+
+@media(min-width:768px) {
+  .fa-bars {
+    display: none;
   }
-    a {
-      text-decoration:none
-    }
-    header nav a{
-     color: #000; 
-    }
-    header nav {
-      display: none;
-    }
-    @media(min-width:768px){
-      .fa-bars{
-      display: none;
-    }
-    header nav {
-      display: flex;
-      gap: 15px;
-      align-items: center;
-    }
-    }
+
+  header nav {
+    display: flex;
+    gap: 3px;
+    align-items: center;
+  }
+
+  .introduction {
+    display: flex;
+   /* flex-direction:row;*/
+    justify-content: space-between;
+  }
+
+  .introduction .intro-left-side h1 {
+    font-size: 3rem;
+  }
+
+  .intro-right-side {
+    width: 400px;
+    margin-top: 20px;
+  }
+  .two-groups{
+    display: flex;
+    justify-content: space-around;
+    flex-basis: 50%;
+    flex-direction: row;
+  }
+  .arrow{
+    margin-left: 20px;
+  }
+
+
+  }
+@media(min-width:992px) {
+.introduction .intro-left-side h1{
+  font-size: 4.5rem;
+}
+
+}
+
